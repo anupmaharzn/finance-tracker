@@ -1,0 +1,31 @@
+.button {
+    width: 140px;
+    height: 40px;
+    background-color: var(--black-secondary);
+    color: var(--white);
+    text-align: center;
+    transition: all ease-in-out 0.3s;
+    border: 1px solid var(--black-outline);
+    font-weight: 400;
+    font-size: var(--text-xs);
+    cursor: pointer;
+
+    &:hover {
+        background-color: transparent;
+        color: var(--black-secondary);
+        border: 1px solid;
+    }
+
+    &--second {
+        border-radius: 30px;
+        width: 170px;
+        height: 45px;
+        font-weight: 500;
+        font-size: 15px;
+    }
+}
+
+button:disabled {
+    cursor: not-allowed;
+    pointer-events: all !important;
+}

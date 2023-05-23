@@ -1,0 +1,114 @@
+.dashboard {
+    position: absolute;
+    width: calc(100% - 248px);
+    top: 80x;
+    left: 216px;
+    margin: 0 16px;
+
+    &__container {
+        padding: 0 2rem;
+        background-color: white;
+    }
+
+    &__cards {
+        display: flex;
+        justify-content: space-around;
+        gap: 1rem;
+        margin: 1rem 1rem;
+    }
+
+    &__card {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.2rem;
+        width: 100%;
+        height: 100px;
+        border-radius: 10px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transform: scale(1.02);
+        }
+
+        &-title {
+            color: var(--white);
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        // &-text {
+        //     display: inline-block;
+        //     width: 50px;
+        //     height: 50px;
+        //     background-color: white;
+        //     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+        //     border-radius: 100%;
+
+        //     p {
+        //         text-align: center;
+        //         padding-top: 12px;
+        //         left: 17px;
+        //         top: 11px;
+        //         color: #1c4e80;
+        //         font-weight: 500;
+        //     }
+        // }
+
+        &-amount {
+            color: #1c4e80;
+            font-weight: 500;
+            background-color: white;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+            border-radius: 5px;
+            padding: 2px 7px;
+        }
+
+        &.one {
+            background-color: #4cb5f5;
+        }
+
+        &.two {
+            background-color: #ea6a47;
+        }
+
+        &.three {
+            background-color: #1c4e80;
+        }
+
+        &.four {
+            background-color: #6ab187;
+        }
+    }
+
+
+    .chart {
+        display: flex;
+        //   flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 50px;
+    }
+
+    &__charts {
+        margin-top: 2rem;
+
+        .lineChart {
+            canvas {
+                width: 850px;
+                display: block;
+                box-sizing: border-box;
+                height: 500px;
+                margin: auto;
+            }
+        }
+    }
+
+    .doughnutChart {
+        width: 20vmax;
+        margin: auto;
+    }
+}

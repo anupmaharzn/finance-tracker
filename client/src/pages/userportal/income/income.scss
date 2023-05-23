@@ -1,0 +1,120 @@
+.income {
+    &__container {
+        position: absolute;
+        width: calc(100% - 248px);
+        top: 80x;
+        left: 216px;
+        margin: 0 16px;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 1rem;
+    }
+}
+
+.addIncome {
+    &__section {
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1.5rem;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: 10px;
+        margin-top: 70px;
+        margin-left: 80px;
+    }
+
+    &__button {
+        margin-top: 2rem;
+    }
+
+    &__title {
+        text-align: center;
+        font-size: var(--text-lg);
+
+    }
+
+}
+
+
+.form-field {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+
+    input {
+        outline: none;
+        border: none;
+        border: 1px solid var(--black-secondary);
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 14px;
+        color: rgb(20, 20, 20);
+
+        &:focus {
+            border: 1px solid var(--black-fade);
+        }
+    }
+
+    label {
+        color: var(--black-primary);
+        font-size: 15px;
+        margin-bottom: 10px;
+        margin-top: 8px;
+    }
+
+    select {
+        border: 1px solid var(--black-secondary);
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 14px;
+        background-color: var(--white);
+    }
+
+    textarea {
+        outline: none;
+        border: none;
+        border: 1px solid var(--black-secondary);
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 14px;
+        color: rgb(20, 20, 20);
+
+        &:focus {
+            border: 1px solid var(--black-fade);
+        }
+    }
+
+    p {
+        color: rgb(237, 70, 70);
+        font-size: 13px;
+    }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+.incomeList__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    overflow-y: scroll;
+    height: 700px;
+    padding-bottom: 1rem;
+}
+
+.incomeList__title {
+    font-size: var(--text-lg);
+    margin-bottom: 2rem;
+    border-bottom: 1px solid;
+    text-transform: capitalize;
+}
